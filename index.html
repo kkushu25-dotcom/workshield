@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ScamShield 3.0</title>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+<header>
+<button class="pill" id="back" aria-label="Go back" hidden><i data-lucide="arrow-left"></i></button>
+<div class="ttl" id="title" role="heading" aria-level="1">ScamShield</div><div class="sp"></div>
+<div class="dd"><button class="pill" data-dd="m-n" aria-label="Notifications" aria-haspopup="true"><i data-lucide="bell"></i></button><div class="menu" id="m-n"><p>No alerts yet. Alerts appear here only after you scan something.</p></div></div>
+<div class="dd"><button class="pill" data-dd="m-l" aria-label="Language" aria-haspopup="true"><i data-lucide="globe"></i><span id="langL">English</span></button><div class="menu" id="m-l"><button data-lang="en">English</button><button data-lang="hi">हिन्दी (Hindi)</button><button data-lang="kn">ಕನ್ನಡ (Kannada)</button></div></div>
+<button class="pill" id="theme" aria-label="Switch theme"><i data-lucide="sun"></i></button>
+<div class="dd"><button class="pill" data-dd="m-u" aria-label="Profile menu" aria-haspopup="true"><i data-lucide="user"></i></button><div class="menu" id="m-u"><a href="#profile">My Profile</a><a href="#privacy-settings">Privacy Settings</a><button id="wipe">Clear data on this device</button></div></div>
+</header>
+<div class="wrap" id="view" tabindex="-1"></div>
+</div>
+<nav class="tabs" id="tabs" aria-label="Main tabs"></nav>
+<script src="app.js"></script>
+</body>
+</html>
